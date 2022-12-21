@@ -1,0 +1,330 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/* HEADER DE LAS 5 PAGINAS */
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.Cabecera{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    border: 5px inset rgba(227, 218, 218, 0.153);
+    text-align: center;
+}
+
+.Cabecera__Lista li{
+    display: inline-block;
+    margin: 5px 30px;
+    color: white;
+    padding: 10px;
+    background-color:black;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+.Cabecera__Lista__Link a:link,
+a:visited,
+a:active
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.Cabecera__Lista__Logo{
+    width: 100px;
+}
+
+
+/* FOOTER DE LAS 5 PAGINAS */
+
+
+.pie{  
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    border: 5px inset rgba(227, 218, 218, 0.153);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pie__Lista li{
+ display: inline-block; 
+ margin: 5px 60px;
+ color: white;
+ padding: 10px;
+ background-color:black;
+ font-family: 'Encode Sans Condensed', sans-serif;
+ font-size: 1rem;
+}
+
+.pie__Lista__Link a:link,
+a:visited,
+a:active
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.pie__Texto{
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+
+
+/* Index */
+
+
+#index__Main{
+    width: 100%;
+    background-color: black;
+}
+
+.index__Main__Imagen{
+    width: 1000px;
+    position: relative;
+    top: 5%;
+    left: 18%;
+    margin-bottom: 50px;
+}
+
+.index__Main__Boton{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    bottom: 30%;
+    right: 37%;
+}
+
+.index__Main__Video{
+    width: 200px;
+    position: relative;
+   bottom: 10px;
+    left: 20%;
+    margin: 50px ;
+}
+
+    
+/* Productos */
+
+
+.main__Productos__Titulo{
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 30px;  
+}
+
+.main__Productos__Section{
+    width: 49.8%;
+    height: 50vh;
+    background-color: black;
+    display: inline-block; 
+}
+
+.main__Productos__Section__Img{
+    width: 600px;
+    margin: 50px;
+    border-radius: 80px;
+    border: 5px solid rgb(35, 34, 34);
+}
+
+.main__Productos__section__Info{
+    font-size: 2rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+/* Localidades */
+
+
+#main__Localidades{
+    width: 100%;
+    
+}
+
+.main__Localidades__Titulo{
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 30px;
+}
+
+.main__Localidades__Section{
+    width: 49.8%;
+    height: 70vh;
+    background-color: black;
+    display: inline-block;
+}
+
+.main__Localidades__Section__Img{
+    width: 600px;
+    margin: 50px;
+    border-radius: 80px;
+    border: 5px solid rgb(35, 34, 34);
+}
+
+section a:link,
+a:visited,
+a:active{
+    list-style-type: none;
+    text-decoration: none;
+}
+.main__Localidades__section__Info{
+    font-size: 2rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: white;
+    text-align: center;
+   
+}
+
+
+/* Nuestra Historia */
+
+
+#main__Historia{
+    width: 100%;
+    height: 146vh;
+}
+
+.main__Historia__Titulo{
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 30px;
+}
+.main__Historia__Section__Parte1{
+    width: 49.8%;
+    height: 70vh;
+    background-color: white;
+    display: inline-block; 
+    position: relative;
+    float: left;
+}
+
+.main__Historia__Section__Parte1 p{
+    color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 20px;
+}
+
+.main__Historia__Section__Parte1 img{
+width: 400px;
+position:relative;
+left: 20%;
+}
+
+.main__Historia__Section__Parte2{
+    width: 49.8%;
+    height: 70vh;
+    background-color: black;
+    display: inline-block;
+    float: right;
+}
+.main__Historia__Section__Parte2 img{
+    width: 300px;
+    border: 1px solid gray;
+    position:relative;
+    left: 20%;
+    margin: 20px;
+}
+
+.main__Historia__Section__Parte2 p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 20px;
+}
+
+
+
+.main__Historia__Section__Parte3{
+    width: 49%;
+    height: 70vh;
+    background-color: black;
+    display: inline-block;
+    float: left;
+}
+
+.main__Historia__Section__Parte3 p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 60px;
+}
+
+.main__Historia__Section__Parte4{
+    width: 49.9%;
+    height: 70vh;
+    background-color: white;
+    display: inline-block;
+    float: right;
+}
+
+
+.main__Historia__Section__Parte4 img{
+    width: 400px;
+    position: relative;
+    top: 10%;
+    left: 15%;
+    
+}
+
+
+/* Contacto */
+
+
+.main__Contacto__Titulo{
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 30px;
+}
+.main__Contacto__SubTitulo{
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    margin: 30px;
+}
+
+.main__Contacto__Form__Section{
+  border: 2px solid white;
+}
+
+.main__Contacto__Form section ul li{
+    list-style: none;
+    color: white;
+    margin: 30px;
+}
+
+.main__Contacto__Form__Textarea{
+    resize:none;
+}
