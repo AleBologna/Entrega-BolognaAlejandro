@@ -7,22 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Web Site Samsung Argentina - Inicio</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <div class="Cabecera">
-            <ul class="Cabecera__Lista">
-                <li> <img class="Cabecera__Lista__Logo" src="../Assets/Images/logo.png" alt="LOGO SAMSUNG"></li>
-                <a href="./index.html" target="_blank" class="Cabecera__Lista__Link"><li>INICIO</li></a>
-                <a href="./Pages/productos.html" target="_blank" class="Cabecera__Lista__Link"><li>PRODUCTOS</li></a>
-                <a href="./Pages/localidades.html" target="_blank" class="Cabecera__Lista__Link"><li>LOCALIDADES</li></a>
-                <a href="./Pages/nuestra_Historia.html" target="_blank" class="Cabecera__Lista__Link"><li>NUESTRA HISTORIA</li></a>
-                <a href="./Pages/contacto.html" target="_blank" class="Cabecera__Lista__Link"><li>CONTACTO</li></a>
+    <nav class="Cabecera1">
+
+        <div><img class="Cabecera1__Logo" src="./Assets/Images/logo.png" alt="LOGO SAMSUNG"></div>
+    
+        <div class="Cabecera1__Lista">
+            <ul class="Cabecera1__Lista__Ul">
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./index.html" target="_blank">INICIO</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/productos.html" target="_blank">PRODUCTOS</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/localidades.html" target="_blank">LOCALIDADES</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/nuestra_Historia.html" target="_blank">NUESTRA HISTORIA</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/contacto.html" target="_blank">CONTACTO</a></li>
             </ul>
         </div>
     </nav>
@@ -30,12 +33,42 @@
 
 <main id="index__Main">
 
-    <div>
-        <img class="index__Main__Imagen" src="../Assets/Images/imagen_index.jpg" alt="IMAGEN DE SAMSUNG(Samsung te conviene)">
+<div class="container">
+  <div class="row">  
+    <div class="col-12">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Assets/Images/imagen_index.jpg" class="d-block w-100" alt="..." 
+          height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Images/imgIndex2.jpg" class="d-block w-100" alt="..."
+          height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Images/imgIndex3.jpg" class="d-block w-100" alt="..."
+          height="700px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
-
-    <a href="../Pages/Productos.html"><h3 class="index__Main__Boton">EXPLORAR</h3></a>
-    
+  </div>
+  </div>
+</div>
+   
     <div class="index__Main__Video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nECChXggH1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -44,16 +77,40 @@
     
 
 <footer>
-        <div class="pie">
-            <ul class="pie__Lista">
-                <a href="./nuestra_Historia.html" target="_blank" class="pie__Lista__Link"><li>ACERCA DE NOSOTROS</li></a>
-                <a href="./contacto.html" target="_blank" class="pie__Lista__Link"><li>CONTACTO</li></a>
-                <a href="./localidades.html" target="_blank" class="pie__Lista__Link"><li>LOCALIDADES</li></a>
-            </ul>
+  <div class="Pie">
+      <div>
+        <ul class="Pie__Lista">
+          <li class="Pie__Lista__Link">ACERCA DE NOSOTROS</li>
+          <li class="Pie__Lista__Link"><a href="./Pages/nuestra_Historia.html" target="_blank">Información de la empresa</a></li>
+          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Noticias</a></li>
+          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Empleo</a></li>
+        </ul>
+      </div> 
 
-            <p class="pie__Texto">Copyright© 1995-2022 Samsung. Todos los derechos reservados. Desarrollado por Alejandro G. Bologna</p>
-        </div>     
+      <div>
+        <ul class="Pie__Lista">
+          <li class="Pie__Lista__Link">SOPORTE</li>
+          <li class="Pie__Lista__Link"><a href="#" target="_blank">Email de soporte</a></li>
+          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Contacto</a></li>
+          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Soporte de Samsung Argentina</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="Pie__Lista">
+          <li class="Pie__Lista__Link">REDES</li>
+          <li class="Pie__Lista__Link">
+            <img src="./Assets/Images/IconoInstagram.png" alt="Icono Instagram" class="Pie__Lista__Iconos">
+            <img src="./Assets/Images/IconoTwitter.png" alt="Icono Twitter" class="Pie__Lista__Iconos">
+            <img src="./Assets/Images/IconoYoutube.png" alt="Icono Youtube" class="Pie__Lista__Iconos">
+            <img src="./Assets/Images/IconoFacebook.png" alt="Icono Facebook" class="Pie__Lista__Iconos">
+          </li>
+        </ul>
+      </div>
+  </div> 
+    <p class="Pie__Texto">Copyright© 1995-2022 Samsung. Todos los derechos reservados. Desarrollado por Alejandro G. Bologna</p>   
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,55 +5,93 @@ box-sizing: border-box;
 }
 
 body{
-    width: 100vw;
     overflow-x: hidden;
     background-color: black;
+    font-family: 'Encode Sans Condensed', sans-serif;
 }
 
-
-/* HEADER DE LAS 5 PAGINAS */
-
+/* HEADER DE LAS 2 PRIMERAS PAGINAS */
 
 header{
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.Cabecera{
-    width: 100%;
+
+.Cabecera1{
     height: 10vh;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
-    border: 5px inset rgba(227, 218, 218, 0.153);
-    text-align: center;
 }
 
-.Cabecera__Lista li{
-    display: inline-block;
-    margin: 5px 30px;
-    color: white;
-    padding: 10px;
-    background-color:black;
-    font-family: 'Encode Sans Condensed', sans-serif;
-    font-size: 1rem;
+.Cabecera1__Logo{
+    width: 120px;
+    margin-left: 30px;
 }
 
-.Cabecera__Lista__Link a:link,
-a:visited,
-a:active
-{
-    list-style-type: none;
+.Cabecera1__Lista{
+    display: flex;
+    align-items: center;
+}
+
+.Cabecera1__Lista__Ul{
+display: flex;
+}
+
+.Cabecera1__Lista__Ul__Links{
+    list-style: none;
+}
+
+.Cabecera1__Lista__Ul__Links a{
     text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 7px 10px;
+    margin: 5px;
+    border-radius: 20px;
 }
 
-.Cabecera__Lista__Logo{
-    width: 100px;
+.Cabecera1__Lista__Ul__Links a:hover{
+background-color: white;
+color: black;
 }
 
 
 /* FOOTER DE LAS 5 PAGINAS */
+footer{
+    height: 22vh;
+    background-color: black;
+}
+.Pie{
+   display: flex;
+   justify-content: space-between; 
+}
 
+.Pie__Lista__Link{
+list-style: none;
+color: white;
+margin-top: 4px;
+}
 
-.pie{  
+.Pie__Lista__Link a{
+    color: white;
+    text-decoration: none;
+}
+
+.Pie__Lista__Iconos{
+    width: 30px;
+    margin: 3px;
+}
+.Pie__Texto{
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+/* .pie{  
     width: 100%;
     height: 15vh;
     background-color: black;
@@ -85,37 +123,19 @@ a:active
     font-family: 'Encode Sans Condensed', sans-serif;
     font-size: 0.8rem;
     color: white;
-}
+} */
 
 
 /* Index */
 
 
 #index__Main{
-    width: 100%;
     background-color: black;
 }
 
-.index__Main__Imagen{
-    width: 1000px;
-    position: relative;
-    top: 5%;
-    left: 18%;
-    margin-bottom: 50px;
-}
+/* .index__Main__Imagen{
+    width: 100%;
 
-.index__Main__Boton{
-    padding: 5px;
-    border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    color: white;
-    font-size: 1rem;
-    font-family: 'Encode Sans Condensed', sans-serif;
-    font-weight: 100;
-    position: absolute;
-    bottom: 30%;
-    right: 37%;
 }
 
 .index__Main__Video{
@@ -124,7 +144,7 @@ a:active
    bottom: 10px;
     left: 20%;
     margin: 50px ;
-}
+} */
 
     
 /* Productos */
