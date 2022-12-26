@@ -21,93 +21,117 @@
     
         <div class="Cabecera1__Lista">
             <ul class="Cabecera1__Lista__Ul">
-                <li class="Cabecera1__Lista__Ul__Links"><a href="./index.html" target="_blank">INICIO</a></li>
-                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/productos.html" target="_blank">PRODUCTOS</a></li>
-                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/localidades.html" target="_blank">LOCALIDADES</a></li>
-                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/nuestra_Historia.html" target="_blank">NUESTRA HISTORIA</a></li>
-                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/contacto.html" target="_blank">CONTACTO</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./index.html">INICIO</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/productos.html">PRODUCTOS</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/localidades.html">LOCALIDADES</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/nuestra_Historia.html">NUESTRA HISTORIA</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./Pages/contacto.html">CONTACTO</a></li>
             </ul>
         </div>
+    </nav>
+
+    <nav class="Cabecera2 navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <img src="./Assets/Images/logo.png" alt="Logo Samsung" class="Cabecera1__Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+            <a class="nav-link" href="./Pages/productos.html">PRODUCTOS</a>
+            <a class="nav-link" href="./Pages/localidades.html">LOCALIDADES</a>
+            <a class="nav-link" href="./Pages/nuestra_Historia.html">NUESTRA HISTORIA</a>
+            <a class="nav-link" href="./Pages/contacto.html">CONTACTO</a>
+          </div>
+        </div>
+      </div>
     </nav>
 </header>
 
 <main id="index__Main">
 
-<div class="container">
-  <div class="row">  
-    <div class="col-12">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Assets/Images/imgIndex2.jpg " class="d-block w-100 Carrusel__Altura" alt="..." height="650px">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="Carrusel__Letra__Titulo">NEO QLED GAMING TV</h2>
+          <p class="Carrusel__Letra__Parrafo">Disfruta de jugar con estas excelentes pantallas!</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Assets/Images/imagen_index.jpg" class="d-block w-100" alt="..." 
-          height="700px">
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Images/imgIndex2.jpg" class="d-block w-100" alt="..."
-          height="700px">
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Images/imgIndex3.jpg" class="d-block w-100" alt="..."
-          height="700px">
-          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Images/imagen_index.jpg" class="d-block w-100 Carrusel__Altura" alt="..." height="650px">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="Carrusel__Letra__Titulo">SENTITE COMO EN LA NATURALEZA</h2>
+          <p class="Carrusel__Letra__Parrafo">Sentirás que estas viviendo lo que ves</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Images/imgIndex3.jpg" class="d-block w-100 Carrusel__Altura" alt="..." height="650px">
+      </div>
     </div>
-  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
    
-    <div class="index__Main__Video">
+    <!-- <div class="index__Main__Video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nECChXggH1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </div> -->
     
 </main>
     
 
 <footer>
   <div class="Pie">
-      <div>
+      <div class="Pie1">
         <ul class="Pie__Lista">
           <li class="Pie__Lista__Link">ACERCA DE NOSOTROS</li>
-          <li class="Pie__Lista__Link"><a href="./Pages/nuestra_Historia.html" target="_blank">Información de la empresa</a></li>
-          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Noticias</a></li>
-          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Empleo</a></li>
+          <li class="Pie__Lista__Link"><a href="./Pages/nuestra_Historia.html">Información de la empresa</a></li>
+          <li class="Pie__Lista__Link"><a href="https://news.samsung.com/ar/">Noticias</a></li>
+          <li class="Pie__Lista__Link"><a href="https://www.samsung.com/ar/sustainability/labor-and-human-rights/">Trabajo y derechos humanos</a></li>
         </ul>
       </div> 
 
-      <div>
+      <div class="Pie2">
         <ul class="Pie__Lista">
           <li class="Pie__Lista__Link">SOPORTE</li>
-          <li class="Pie__Lista__Link"><a href="#" target="_blank">Email de soporte</a></li>
-          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Contacto</a></li>
-          <li class="Pie__Lista__Link"><a href="#" target="_blank" >Soporte de Samsung Argentina</a></li>
+          <li class="Pie__Lista__Link"><a href="https://www.samsung.com/ar/support/email/">Email de soporte</a></li>
+          <li class="Pie__Lista__Link"><a href="./Pages/contacto.html">Contacto</a></li>
+          <li class="Pie__Lista__Link"><a href="https://www.samsung.com/ar/support/">Soporte de Samsung Argentina</a></li>
         </ul>
       </div>
 
-      <div>
+      <div class="Pie3">
         <ul class="Pie__Lista">
           <li class="Pie__Lista__Link">REDES</li>
           <li class="Pie__Lista__Link">
-            <img src="./Assets/Images/IconoInstagram.png" alt="Icono Instagram" class="Pie__Lista__Iconos">
-            <img src="./Assets/Images/IconoTwitter.png" alt="Icono Twitter" class="Pie__Lista__Iconos">
-            <img src="./Assets/Images/IconoYoutube.png" alt="Icono Youtube" class="Pie__Lista__Iconos">
-            <img src="./Assets/Images/IconoFacebook.png" alt="Icono Facebook" class="Pie__Lista__Iconos">
+            <a href="https://www.instagram.com/samsungargentina/" target="_blank"><img src="./Assets/Images/IconoInstagram.png" alt="Icono Instagram" class="Pie__Lista__Iconos"></a>
+            <a href="https://twitter.com/SamsungArg" target="_blank"><img src="./Assets/Images/IconoTwitter.png" alt="Icono Twitter" class="Pie__Lista__Iconos"></a>
+            <a href="https://www.youtube.com/@SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoYoutube.png" alt="Icono Youtube" class="Pie__Lista__Iconos"></a>
+            <a href="https://www.facebook.com/SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoFacebook.png" alt="Icono Facebook" class="Pie__Lista__Iconos"></a>
           </li>
         </ul>
       </div>
   </div> 
+  <div>
+    <ul class="Pie__Lista__Responsive">
+      <li class="Pie__Lista__Responsive__Link">
+        <a href="https://www.instagram.com/samsungargentina/" target="_blank"><img src="./Assets/Images/IconoInstagram.png" alt="Icono Instagram" class="Pie__Lista__Iconos"></a>
+        <a href="https://twitter.com/SamsungArg" target="_blank"><img src="./Assets/Images/IconoTwitter.png" alt="Icono Twitter" class="Pie__Lista__Iconos"></a>
+        <a href="https://www.youtube.com/@SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoYoutube.png" alt="Icono Youtube" class="Pie__Lista__Iconos"></a>
+        <a href="https://www.facebook.com/SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoFacebook.png" alt="Icono Facebook" class="Pie__Lista__Iconos"></a>
+      </li>
+    </ul>
+  </div>
     <p class="Pie__Texto">Copyright© 1995-2022 Samsung. Todos los derechos reservados. Desarrollado por Alejandro G. Bologna</p>   
 </footer>
 

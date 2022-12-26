@@ -7,22 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Web Site Samsung Argentina - Nuestra Historia</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     
 <header>
-    <nav>
-        <div class="Cabecera">
-            <ul class="Cabecera__Lista">
-                <li> <img class="Cabecera__Lista__Logo" src="../Assets/Images/logo.png" alt="LOGO SAMSUNG"></li>
-                <a href="./index.html" target="_blank" class="Cabecera__Lista__Link"><li>INICIO</li></a>
-                <a href="./productos.html" target="_blank" class="Cabecera__Lista__Link"><li>PRODUCTOS</li></a>
-                <a href="./localidades.html" target="_blank" class="Cabecera__Lista__Link"><li>LOCALIDADES</li></a>
-                <a href="./nuestra_Historia.html" target="_blank" class="Cabecera__Lista__Link"><li>NUESTRA HISTORIA</li></a>
-                <a href="./contacto.html" target="_blank" class="Cabecera__Lista__Link"><li>CONTACTO</li></a>
+    <nav class="Cabecera1">
+
+        <div><img class="Cabecera1__Logo" src="../Assets/Images/logo.png" alt="LOGO SAMSUNG"></div>
+    
+        <div class="Cabecera1__Lista">
+            <ul class="Cabecera1__Lista__Ul">
+                <li class="Cabecera1__Lista__Ul__Links"><a href="../index.html">INICIO</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./productos.html">PRODUCTOS</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./localidades.html">LOCALIDADES</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./nuestra_Historia.html">NUESTRA HISTORIA</a></li>
+                <li class="Cabecera1__Lista__Ul__Links"><a href="./contacto.html">CONTACTO</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <nav class="Cabecera2 navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+        <img src="../Assets/Images/logo.png" alt="Logo Samsung" class="Cabecera1__Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+            <a class="nav-link" href="./localidades.html">LOCALIDADES</a>
+            <a class="nav-link" href="./nuestra_Historia.html">NUESTRA HISTORIA</a>
+            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </div>
+        </div>
         </div>
     </nav>
 </header>
@@ -60,18 +81,51 @@
 
 
 <footer>
-    <div class="pie">
-        <ul class="pie__Lista">
-            <a href="./nuestra_Historia.html" target="_blank" class="pie__Lista__Link"><li>ACERCA DE NOSOTROS</li></a>
-            <a href="./contacto.html" target="_blank" class="pie__Lista__Link"><li>CONTACTO</li></a>
-            <a href="./localidades.html" target="_blank" class="pie__Lista__Link"><li>LOCALIDADES</li></a>
+  <div class="Pie">
+      <div class="Pie1">
+        <ul class="Pie__Lista">
+          <li class="Pie__Lista__Link">ACERCA DE NOSOTROS</li>
+          <li class="Pie__Lista__Link"><a href="./Pages/nuestra_Historia.html">Información de la empresa</a></li>
+          <li class="Pie__Lista__Link"><a href="https://news.samsung.com/ar/">Noticias</a></li>
+          <li class="Pie__Lista__Link"><a href="https://www.samsung.com/ar/sustainability/labor-and-human-rights/">Trabajo y derechos humanos</a></li>
         </ul>
+      </div> 
 
-        <p class="pie__Texto">Copyright© 1995-2022 Samsung. Todos los derechos reservados. Desarrollado por Alejandro G. Bologna</p>
-    </div>
+      <div class="Pie2">
+        <ul class="Pie__Lista">
+          <li class="Pie__Lista__Link">SOPORTE</li>
+          <li class="Pie__Lista__Link"><a href="https://www.samsung.com/ar/support/email/">Email de soporte</a></li>
+          <li class="Pie__Lista__Link"><a href="./Pages/contacto.html">Contacto</a></li>
+          <li class="Pie__Lista__Link"><a href="https://www.samsung.com/ar/support/">Soporte de Samsung Argentina</a></li>
+        </ul>
+      </div>
+
+      <div class="Pie3">
+        <ul class="Pie__Lista">
+          <li class="Pie__Lista__Link">REDES</li>
+          <li class="Pie__Lista__Link">
+            <a href="https://www.instagram.com/samsungargentina/" target="_blank"><img src="./Assets/Images/IconoInstagram.png" alt="Icono Instagram" class="Pie__Lista__Iconos"></a>
+            <a href="https://twitter.com/SamsungArg" target="_blank"><img src="./Assets/Images/IconoTwitter.png" alt="Icono Twitter" class="Pie__Lista__Iconos"></a>
+            <a href="https://www.youtube.com/@SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoYoutube.png" alt="Icono Youtube" class="Pie__Lista__Iconos"></a>
+            <a href="https://www.facebook.com/SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoFacebook.png" alt="Icono Facebook" class="Pie__Lista__Iconos"></a>
+          </li>
+        </ul>
+      </div>
+  </div> 
+  <div>
+    <ul class="Pie__Lista__Responsive">
+      <li class="Pie__Lista__Responsive__Link">
+        <a href="https://www.instagram.com/samsungargentina/" target="_blank"><img src="./Assets/Images/IconoInstagram.png" alt="Icono Instagram" class="Pie__Lista__Iconos"></a>
+        <a href="https://twitter.com/SamsungArg" target="_blank"><img src="./Assets/Images/IconoTwitter.png" alt="Icono Twitter" class="Pie__Lista__Iconos"></a>
+        <a href="https://www.youtube.com/@SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoYoutube.png" alt="Icono Youtube" class="Pie__Lista__Iconos"></a>
+        <a href="https://www.facebook.com/SamsungArgentina" target="_blank"><img src="./Assets/Images/IconoFacebook.png" alt="Icono Facebook" class="Pie__Lista__Iconos"></a>
+      </li>
+    </ul>
+  </div>
+    <p class="Pie__Texto">Copyright© 1995-2022 Samsung. Todos los derechos reservados. Desarrollado por Alejandro G. Bologna</p>   
 </footer>
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
