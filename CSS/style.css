@@ -122,7 +122,7 @@ justify-content: center;
 footer{
     height: 20vh;
     background-color: rgb(3, 3, 3);
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .Pie{
    display: flex;
@@ -207,7 +207,79 @@ transform: scale(1.3);
 #index__Main{
     background-color: black;
 }
+.Index__Section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Index__Section1__Articulo1{
+    height: 70vh;
+    width: 70vw;
+    margin-top: 50px;
+    background-image:url("../Assets/Images/Tu-Galaxy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    box-shadow: rgba(177, 179, 180, 0.6) 0px 2px 4px 0px, rgba(177, 179, 180, 0.6) 0px 2px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+}
+.Index__Section1__Articulo1:hover{
+    transform: scale(1.1);
+}
+.Index__Section1__Articulo1__Texto{
+    text-align: center;
+    margin-top: 30px;
+}
+.Index__Section1__Articulo1__Link{
+    color: rgb(0, 0, 0);
+    
+    padding: 7px;
+    background-color: rgb(20, 109, 219);
+    border-radius: 30px;
+}
+.Index__Section1__Articulo1__Link:hover{
+    color: rgb(0, 0, 0);
+}
 
+.Index__Section1__Articulo2{
+    height: 70vh;
+    width: 70vw;
+    margin-top: 50px;
+    background-image:url("../Assets/Images/Tu-Galaxy3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    box-shadow: rgba(177, 179, 180, 0.6) 0px 2px 4px 0px, rgba(177, 179, 180, 0.6) 0px 2px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+}
+.Index__Section1__Articulo2:hover{
+    transform: scale(1.1);
+}
+.Index__Section1__Articulo2__Texto{
+    text-align: center;
+    margin-top: 30px;
+}
+.Index__Section1__Articulo2__Link{
+    color: rgb(0, 0, 0);
+    
+    padding: 7px;
+    background-color: rgb(20, 109, 219);
+    border-radius: 30px;
+}
+.Index__Section1__Articulo2__Link:hover{
+    color: rgb(0, 0, 0);
+}
 .row>*{
     margin-bottom: 50px;
 }
@@ -215,6 +287,9 @@ transform: scale(1.3);
 @media (max-width:1150px){
     .Carrusel__Altura{
         height: 550px;
+    }
+    .Index__Section1__Articulo2{
+        background-position: -100px;
     }
 }
 
@@ -226,8 +301,25 @@ transform: scale(1.3);
     .Carrusel__Letra__Titulo{
         font-size: 1.5rem;
     }
-}
+    .Index__Section1__Articulo1{
+        background-position: -50px;
+    }
 
+    .Index__Section1__Articulo2{
+        background-image:url("../Assets/Images/Tu-Galaxy4.jpg");
+        background-position: 0;
+    }  
+}
+@media (max-width:950px){
+    .Index__Section1__Articulo1{
+        background-position: -90px;
+    }
+}
+@media (max-width:880px){
+    .Index__Section1__Articulo1{
+        background-position: -110px;
+    }
+}
 @media (max-width:800px){
     .Carrusel__Altura{
         height: 375px;
@@ -236,6 +328,13 @@ transform: scale(1.3);
     .Carrusel__Letra__Titulo{
         font-size: 1.2rem;
     }
+    .Index__Section1__Articulo1{
+        background-position: -190px;
+    }
+    .Index__Section1__Articulo2{
+        background-image:url("../Assets/Images/Tu-Galaxy4.jpg");
+        background-position: -50px;
+    }  
 }
 
 @media (max-width:700px){
@@ -246,6 +345,14 @@ transform: scale(1.3);
     .Carrusel__Letra__Titulo{
         font-size: 1.2rem;
     }
+    .Index__Section1__Articulo1{
+        background-image:url("../Assets/Images/Tu-Galaxy2.jpg");
+        background-position: -120px;
+    }
+    .Index__Section1__Articulo2{
+        background-image:url("../Assets/Images/Tu-Galaxy4.jpg");
+        background-position: -100px;
+    }  
 }
 
 @media (max-width:500px){
@@ -256,6 +363,10 @@ transform: scale(1.3);
     .Carrusel__Letra__Titulo{
         font-size: 1.2rem;
     }
+    .Index__Section1__Articulo2{
+        background-image:url("../Assets/Images/Tu-Galaxy5.jpg");
+        background-position: -220px;
+    }  
 }
 
 @media (max-width:400px){
@@ -265,6 +376,12 @@ transform: scale(1.3);
 
     .Carrusel__Letra__Titulo{
         font-size: 1.2rem;
+    }
+    .Index__Section1__Articulo1{
+        background-position: -150px;
+    }
+    .Index__Section1__Articulo1__Texto{
+        font-size: 1rem;
     }
 }
 
