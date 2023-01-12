@@ -10,7 +10,7 @@ header {
   padding: 10px 50px;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  background-color: $ColorPrincipal;
 
   .Cabecera1__Logo {
     width: 120px;
@@ -60,7 +60,7 @@ header {
   }
   .Cabecera2 {
     display: block;
-    background-color: #000 !important;
+    background-color: $ColorPrincipal !important;
   }
   .navbar > .container,
   .navbar > .container-fluid,

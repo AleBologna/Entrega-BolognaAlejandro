@@ -1,10 +1,7 @@
 #index__Main {
-  background-color: #000;
+  background-color: $ColorPrincipal;
   .Index__Section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(column, none, center, center);
     .Index__Section1__Articulo1 {
       height: 70vh;
       width: 80vw;
@@ -16,14 +13,11 @@
       border-radius: 30px;
       box-shadow: rgba(177, 179, 180, 0.6) 0px 2px 4px 0px,
         rgba(177, 179, 180, 0.6) 0px 2px 16px 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
+      @include flexbox(column, none, none, center);
       color: rgb(0, 0, 0);
       transition: all 1s;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       .Index__Section1__Articulo1__Texto {
@@ -42,71 +36,34 @@
       }
     }
     .Index__Section1__Articulo2 {
-      height: 70vh;
-      width: 80vw;
-      margin-top: 50px;
+      @extend .Index__Section1__Articulo1;
       background-image: url("../Assets/Images/Tu-Galaxy3.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 30px;
-      box-shadow: rgba(177, 179, 180, 0.6) 0px 2px 4px 0px,
-        rgba(177, 179, 180, 0.6) 0px 2px 16px 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      color: rgb(0, 0, 0);
-      transition: all 1s;
-      &:hover {
-        transform: scale(1.1);
-      }
       .Index__Section1__Articulo2__Texto {
-        text-align: center;
-        margin-top: 30px;
+        @extend .Index__Section1__Articulo1__Texto;
       }
       .Index__Section1__Articulo2__Link {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        padding: 7px;
-        background-color: rgb(20, 109, 219);
-        border-radius: 30px;
-        &:hover {
-          color: rgb(0, 0, 0);
-        }
+        @extend .Index__Section1__Articulo1__Link;
       }
     }
-    .Index__Section1__Articulo3{
-      height: 70vh;
-      width: 80vw;
+    .Index__Section1__Articulo3 {
+      @extend .Index__Section1__Articulo1;
       margin: 50px 0px;
       background-image: url("../Assets/Images/Tu-Galaxy6.webp");
-      background-size: cover;
-      background-repeat: no-repeat;
       background-position: right;
-      border-radius: 30px;
-      box-shadow: rgba(177, 179, 180, 0.6) 0px 2px 4px 0px,
-        rgba(177, 179, 180, 0.6) 0px 2px 16px 0px;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       color: #fff;
-      transition: all 1s;
-      &:hover {
-        transform: scale(1.1);
-      }
-      div{
+      div {
         width: 50%;
-      .Index__Section1__Articulo3__Texto {
-        margin-left: 50px;
-      }
-      p{
-       margin-left: 50px;
+        .Index__Section1__Articulo3__Texto {
+          margin-left: 50px;
+        }
+        p {
+          margin-left: 50px;
+        }
       }
     }
   }
-}
 }
 @media (max-width: 1444px) {
   .Carrusel__Altura {
@@ -121,11 +78,13 @@
   .Carrusel__Letra__Titulo {
     font-size: 1.5rem;
   }
-  #index__Main .Index__Section1{
-  .Index__Section1__Articulo2 {
-    background-image: url("../Assets/Images/Tu-Galaxy5.jpg");
+  #index__Main {
+    .Index__Section1 {
+      .Index__Section1__Articulo2 {
+        background-image: url("../Assets/Images/Tu-Galaxy5.jpg");
+      }
+    }
   }
-}
 }
 @media (max-width: 800px) {
   .Carrusel__Altura {
@@ -134,15 +93,14 @@
   .Carrusel__Letra__Titulo {
     font-size: 1.2rem;
   }
-  #index__Main{
-    .Index__Section1{
-      .Index__Section1__Articulo3{
-        background-position:-700px;
+  #index__Main {
+    .Index__Section1 {
+      .Index__Section1__Articulo3 {
+        background-position: -700px;
       }
     }
-    
-  } 
   }
+}
 @media (max-width: 700px) {
   .Carrusel__Altura {
     height: 300px;
@@ -151,36 +109,34 @@
   .Carrusel__Letra__Titulo {
     font-size: 1.2rem;
   }
-  #index__Main{
-     .Index__Section1{
-  .Index__Section1__Articulo1 {
-    background-image: url("../Assets/Images/Tu-Galaxy2.jpg");
-  }
-}
-  }
-  #index__Main{
-    .Index__Section1{
-      .Index__Section1__Articulo3{
+  #index__Main {
+    .Index__Section1 {
+      .Index__Section1__Articulo1 {
+        background-image: url("../Assets/Images/Tu-Galaxy2.jpg");
+      }
+      .Index__Section1__Articulo2 {
+        background-image: url("../Assets/Images/Tu-Galaxy5.jpg");
+      }
+      .Index__Section1__Articulo3 {
         background-image: url("../Assets/Images/Tu-Galaxy6.2.webp");
-      background-position: center;
-      justify-content: flex-start;
-      align-items: center;
-      div{
-        width: 100%;
-        
-      .Index__Section1__Articulo3__Texto {
-        text-align: center;
-        margin: 10px;
-      }
-      p{
-        margin: 10px;
-       text-align: center;
+        background-position: center;
+        justify-content: flex-start;
+        align-items: center;
+        div {
+          width: 100%;
+
+          .Index__Section1__Articulo3__Texto {
+            text-align: center;
+            margin: 10px;
+          }
+          p {
+            margin: 10px;
+            text-align: center;
+          }
+        }
       }
     }
-      }
-    }
-    
-  } 
+  }
 }
 @media (max-width: 500px) {
   .Carrusel__Altura {
@@ -190,7 +146,6 @@
   .Carrusel__Letra__Titulo {
     font-size: 1.2rem;
   }
-
 }
 
 @media (max-width: 400px) {

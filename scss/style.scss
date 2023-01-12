@@ -1,16 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
+@import "./variables";
+@import "./mixin";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    overflow-x: hidden;
-    background-color: rgb(0, 0, 0);
-    font-family: 'Encode Sans Condensed', sans-serif;
+body {
+  overflow-x: hidden;
+  background-color: $ColorPrincipal;
+  font-family: "Encode Sans Condensed", sans-serif;
 }
+
 @import "./index";
-@import "./variables";
 @import "./header";
 @import "./productos";
 @import "./localidades";
