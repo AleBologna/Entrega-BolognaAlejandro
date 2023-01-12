@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+@import "./index";
+@import "./variables";
+@import "./header";
+@import "./productos";
+@import "./localidades";
+@import "./nuestra_Historia";
+@import "./contacto";
+@import "./footer";
