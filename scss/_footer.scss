@@ -12,7 +12,7 @@ footer {
     .Pie__Lista__Link {
       list-style: none;
       color: white;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin-top: 4px;
       a {
         color: white;
@@ -42,39 +42,4 @@ footer {
   text-align: center;
   font-size: 0.6rem;
   margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .Pie {
-    justify-content: space-evenly;
-    .Pie3 {
-      display: none;
-    }
-  }
-
-  .Pie__Lista__Responsive {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    .Pie__Lista__Iconos {
-      width: 25px;
-      margin: 2px;
-      border-radius: 100%;
-    }
-  }
-}
-@media (max-width: 610px) {
-  .Pie2 {
-    display: none;
-  }
-  .Pie__Lista {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 520px) {
-  .Pie__Texto {
-    font-size: 0.5rem;
-  }
 }

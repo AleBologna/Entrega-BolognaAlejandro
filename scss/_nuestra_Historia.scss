@@ -30,7 +30,7 @@
     height: 500px;
     background-color: #fff;
     padding: 30px;
-    @include flexbox(column, none, center, center);
+    @include flexbox(column, none, space-evenly, center);
     .Main__Historia__Div1__Texto1 {
       color: #000;
       text-align: center;
@@ -85,104 +85,5 @@
     color: #000;
     text-align: center;
     margin: 0px 100px;
-  }
-}
-@media (max-width: 1020px) {
-  .Main__Historia {
-    .Main__Historia__Div1 {
-      padding-top: 0;
-      width: 100%;
-      .Main__Historia__Div1__Img1 {
-        width: 60%;
-      }
-    }
-  }
-  .Main__Historia {
-    .Main__Historia__Div2 {
-      width: 100%;
-      .Main__Historia__Div2__Img1 {
-        width: 40%;
-      }
-    }
-  }
-  .Main__Historia2 {
-    .Main__Historia__Div3 {
-      width: 100%;
-      height: 400px;
-      padding: 0;
-      .Main__Historia__Div3__Texto1 {
-        text-align: center;
-      }
-    }
-  }
-  .Main__Historia2 {
-    .Main__Historia__Div4 {
-      width: 100%;
-      .Main__Historia__Div4__Img1 {
-        width: 40%;
-      }
-    }
-  }
-  .main__Historia__Titulo {
-    .main__Historia__TituloIzq {
-      background-color: #fff;
-      .main__Historia__TituloIzq__Texto {
-        color: #000;
-        padding: 10px 0px;
-      }
-    }
-  }
-  .main__Historia__Titulo {
-    .main__Historia__TituloDer {
-      .main__Historia__TituloDer__Texto {
-        padding: 10px 0px;
-      }
-    }
-  }
-  .Main__Historia2 {
-    .Main__Historia__Div3 {
-      .Main__Historia__Div3__Texto1 {
-        margin: 0px 100px;
-      }
-    }
-  }
-}
-@media (max-width: 580px) {
-  .Main__Historia {
-    .Main__Historia__Div1 {
-      .Main__Historia__Div1__Img1 {
-        width: 90%;
-        margin-top: 20px;
-      }
-    }
-  }
-  .Main__Historia {
-    .Main__Historia__Div2 {
-      .Main__Historia__Div2__Img1 {
-        width: 65%;
-      }
-    }
-  }
-  .Main__Historia2 {
-    .Main__Historia__Div3 {
-      height: 600px;
-      padding: 0;
-      .Main__Historia__Div3__Texto1 {
-        margin: 0px 30px;
-      }
-    }
-  }
-  .Main__Historia2 {
-    .Main__Historia__Div4 {
-      .Main__Historia__Div4__Img1 {
-        width: 90%;
-      }
-    }
-  }
-  .Final {
-    height: 600px;
-    .Final__Texto {
-      margin: 0px 30px;
-    }
   }
 }

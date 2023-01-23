@@ -18,10 +18,10 @@ body {
     justify-content: center;
     align-items: center; }
     #index__Main .Index__Section1 .Index__Section1__Articulo1, #index__Main .Index__Section1 .Index__Section1__Articulo2, #index__Main .Index__Section1 .Index__Section1__Articulo3 {
-      height: 70vh;
+      height: 450px;
       width: 80vw;
       margin-top: 50px;
-      background-image: url("../Assets/Images/Tu-Galaxy.jpg");
+      background-image: url("../Assets/Images/Tu-Galaxy.webp");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -32,23 +32,22 @@ body {
       flex-wrap: none;
       justify-content: none;
       align-items: center;
-      color: black;
+      color: #000;
       transition: all 1s; }
       #index__Main .Index__Section1 .Index__Section1__Articulo1:hover, #index__Main .Index__Section1 .Index__Section1__Articulo2:hover, #index__Main .Index__Section1 .Index__Section1__Articulo3:hover {
         transform: scale(1.05); }
       #index__Main .Index__Section1 .Index__Section1__Articulo1 .Index__Section1__Articulo1__Texto, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo1__Texto, #index__Main .Index__Section1 .Index__Section1__Articulo3 .Index__Section1__Articulo1__Texto, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo2__Texto {
+        color: #fff;
         text-align: center;
         margin-top: 30px; }
       #index__Main .Index__Section1 .Index__Section1__Articulo1 .Index__Section1__Articulo1__Link, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo1__Link, #index__Main .Index__Section1 .Index__Section1__Articulo3 .Index__Section1__Articulo1__Link, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo2__Link {
-        color: black;
+        color: #000;
         text-decoration: none;
         padding: 7px;
-        background-color: #146ddb;
+        background-color: white;
         border-radius: 30px; }
-        #index__Main .Index__Section1 .Index__Section1__Articulo1 .Index__Section1__Articulo1__Link:hover, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo1__Link:hover, #index__Main .Index__Section1 .Index__Section1__Articulo3 .Index__Section1__Articulo1__Link:hover, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo2__Link:hover {
-          color: black; }
     #index__Main .Index__Section1 .Index__Section1__Articulo2 {
-      background-image: url("../Assets/Images/Tu-Galaxy3.jpg"); }
+      background-image: url("../Assets/Images/Tu-Galaxy3.webp"); }
     #index__Main .Index__Section1 .Index__Section1__Articulo3 {
       margin: 50px 0px;
       background-image: url("../Assets/Images/Tu-Galaxy6.webp");
@@ -62,65 +61,6 @@ body {
           margin-left: 50px; }
         #index__Main .Index__Section1 .Index__Section1__Articulo3 div p {
           margin-left: 50px; }
-
-@media (max-width: 1444px) {
-  .Carrusel__Altura {
-    height: 550px; } }
-
-@media (max-width: 1050px) {
-  .Carrusel__Altura {
-    height: 450px; }
-  .Carrusel__Letra__Titulo {
-    font-size: 1.5rem; }
-  #index__Main .Index__Section1 .Index__Section1__Articulo2 {
-    background-image: url("../Assets/Images/Tu-Galaxy5.jpg"); } }
-
-@media (max-width: 800px) {
-  .Carrusel__Altura {
-    height: 375px; }
-  .Carrusel__Letra__Titulo {
-    font-size: 1.2rem; }
-  #index__Main .Index__Section1 .Index__Section1__Articulo3 {
-    background-position: -700px; } }
-
-@media (max-width: 700px) {
-  .Carrusel__Altura {
-    height: 300px; }
-  .Carrusel__Letra__Titulo {
-    font-size: 1.2rem; }
-  #index__Main .Index__Section1 .Index__Section1__Articulo1, #index__Main .Index__Section1 .Index__Section1__Articulo2, #index__Main .Index__Section1 .Index__Section1__Articulo3 {
-    background-image: url("../Assets/Images/Tu-Galaxy2.jpg"); }
-  #index__Main .Index__Section1 .Index__Section1__Articulo2 {
-    background-image: url("../Assets/Images/Tu-Galaxy5.jpg"); }
-  #index__Main .Index__Section1 .Index__Section1__Articulo3 {
-    background-image: url("../Assets/Images/Tu-Galaxy6.2.webp");
-    background-position: center;
-    justify-content: flex-start;
-    align-items: center; }
-    #index__Main .Index__Section1 .Index__Section1__Articulo3 div {
-      width: 100%; }
-      #index__Main .Index__Section1 .Index__Section1__Articulo3 div .Index__Section1__Articulo3__Texto {
-        text-align: center;
-        margin: 10px; }
-      #index__Main .Index__Section1 .Index__Section1__Articulo3 div p {
-        margin: 10px;
-        text-align: center; } }
-
-@media (max-width: 500px) {
-  .Carrusel__Altura {
-    height: 250px; }
-  .Carrusel__Letra__Titulo {
-    font-size: 1.2rem; } }
-
-@media (max-width: 400px) {
-  .Carrusel__Altura {
-    height: 200px; }
-  .Carrusel__Letra__Titulo {
-    font-size: 1.2rem; }
-  .Index__Section1__Articulo1__Texto, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo2__Texto {
-    font-size: 1rem; }
-  .Index__Section1__Articulo2__Texto {
-    font-size: 1rem; } }
 
 header {
   position: sticky;
@@ -168,43 +108,6 @@ header {
 .row {
   justify-content: center; }
 
-@media (max-width: 870px) {
-  .Cabecera1 {
-    display: none; }
-  .Cabecera2 {
-    display: block;
-    background-color: #000 !important; }
-  .navbar > .container,
-  .navbar > .container-fluid,
-  .navbar > .container-lg,
-  .navbar > .container-md,
-  .navbar > .container-sm,
-  .navbar > .container-xl,
-  .navbar > .container-xxl {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between; }
-  .navbar-brand {
-    color: #fff; }
-  .navbar-toggler {
-    border: 1px solid #fff !important; }
-  .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%; }
-  .nav-link {
-    color: #fff !important;
-    font-family: "Encode Sans Condensed", sans-serif !important; }
-  .Cabecera1__Logo {
-    width: 120px;
-    margin: 0; } }
-
 .Main__Productos__Titulo {
   color: #fff;
   text-align: center;
@@ -225,37 +128,43 @@ header {
   align-items: none;
   margin-bottom: 30px;
   border-bottom: 1px solid rgba(66, 66, 66, 0.155); }
-  .Main__Productos__Section .Main__Productos__Section__Link {
-    text-decoration: none; }
-    .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box {
-      width: 250px;
-      height: 350px;
-      background-color: white;
-      margin: 20px;
-      box-shadow: 2px 2px 2px 1px #9d9d9d;
-      transition: all 0.5s; }
-      .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box:hover {
-        transform: scale(1.05) !important; }
-      .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Img {
-        width: 100%;
-        height: 70%;
-        border-bottom: 1px solid #dcdbdb; }
-        .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Img .Main__Productos__Section__Box__Img__Tamaño {
+  .Main__Productos__Section div {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: none; }
+    .Main__Productos__Section div .Main__Productos__Section__Link {
+      text-decoration: none; }
+      .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box {
+        width: 250px;
+        height: 350px;
+        background-color: white;
+        margin: 20px;
+        box-shadow: 2px 2px 2px 1px #9d9d9d;
+        transition: all 0.5s; }
+        .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box:hover {
+          transform: scale(1.05) !important; }
+        .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Img {
           width: 100%;
-          height: 100%; }
-      .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Info {
-        height: 30%;
-        width: 100%;
-        color: #000;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: none;
-        justify-content: center;
-        align-items: center; }
-        .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Info .Main__Productos__Section__Box__Info h3 {
-          margin-bottom: 0; }
-        .Main__Productos__Section .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Info .Main__Productos__Section__Box__Info p {
-          margin-bottom: 0; }
+          height: 70%;
+          border-bottom: 1px solid #dcdbdb; }
+          .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Img .Main__Productos__Section__Box__Img__Tamaño {
+            width: 100%;
+            height: 100%; }
+        .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Info {
+          height: 30%;
+          width: 100%;
+          color: #000;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: none;
+          justify-content: center;
+          align-items: center; }
+          .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Info .Main__Productos__Section__Box__Info h3 {
+            margin-bottom: 0; }
+          .Main__Productos__Section div .Main__Productos__Section__Link .Main__Productos__Section__Box .Main__Productos__Section__Box__Info .Main__Productos__Section__Box__Info p {
+            margin-bottom: 0; }
 
 .main__Localidades__Titulo {
   color: white;
@@ -282,13 +191,6 @@ header {
         color: #fff;
         text-align: center;
         margin: 30px 0px; }
-
-@media (max-width: 580px) {
-  .Main__Localidades .Main__Localidades__Div {
-    width: 90%; }
-    .Main__Localidades .Main__Localidades__Div .Main__Localidades__Div__Link .Main__Localidades__Div__Img {
-      width: 100%;
-      height: auto; } }
 
 .main__Historia__Titulo {
   display: flex;
@@ -329,7 +231,7 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: none;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; }
     .Main__Historia .Main__Historia__Div1 .Main__Historia__Div1__Texto1, .Main__Historia .Main__Historia__Div2 .Main__Historia__Div1__Texto1 {
       color: #000;
@@ -385,54 +287,6 @@ header {
     text-align: center;
     margin: 0px 100px; }
 
-@media (max-width: 1020px) {
-  .Main__Historia .Main__Historia__Div1, .Main__Historia .Main__Historia__Div2 {
-    padding-top: 0;
-    width: 100%; }
-    .Main__Historia .Main__Historia__Div1 .Main__Historia__Div1__Img1, .Main__Historia .Main__Historia__Div2 .Main__Historia__Div1__Img1 {
-      width: 60%; }
-  .Main__Historia .Main__Historia__Div2 {
-    width: 100%; }
-    .Main__Historia .Main__Historia__Div2 .Main__Historia__Div2__Img1 {
-      width: 40%; }
-  .Main__Historia2 .Main__Historia__Div3, .Main__Historia2 .Main__Historia__Div4 {
-    width: 100%;
-    height: 400px;
-    padding: 0; }
-    .Main__Historia2 .Main__Historia__Div3 .Main__Historia__Div3__Texto1, .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div3__Texto1 {
-      text-align: center; }
-  .Main__Historia2 .Main__Historia__Div4 {
-    width: 100%; }
-    .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div4__Img1 {
-      width: 40%; }
-  .main__Historia__Titulo .main__Historia__TituloIzq {
-    background-color: #fff; }
-    .main__Historia__Titulo .main__Historia__TituloIzq .main__Historia__TituloIzq__Texto {
-      color: #000;
-      padding: 10px 0px; }
-  .main__Historia__Titulo .main__Historia__TituloDer .main__Historia__TituloDer__Texto {
-    padding: 10px 0px; }
-  .Main__Historia2 .Main__Historia__Div3 .Main__Historia__Div3__Texto1, .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div3__Texto1 {
-    margin: 0px 100px; } }
-
-@media (max-width: 580px) {
-  .Main__Historia .Main__Historia__Div1 .Main__Historia__Div1__Img1, .Main__Historia .Main__Historia__Div2 .Main__Historia__Div1__Img1 {
-    width: 90%;
-    margin-top: 20px; }
-  .Main__Historia .Main__Historia__Div2 .Main__Historia__Div2__Img1 {
-    width: 65%; }
-  .Main__Historia2 .Main__Historia__Div3, .Main__Historia2 .Main__Historia__Div4 {
-    height: 600px;
-    padding: 0; }
-    .Main__Historia2 .Main__Historia__Div3 .Main__Historia__Div3__Texto1, .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div3__Texto1 {
-      margin: 0px 30px; }
-  .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div4__Img1 {
-    width: 90%; }
-  .Final {
-    height: 600px; }
-    .Final .Final__Texto {
-      margin: 0px 30px; } }
-
 .main__Contacto__Titulo {
   color: white;
   text-align: center;
@@ -478,36 +332,6 @@ header {
           height: 250px;
           resize: none; }
 
-@media (max-width: 580px) {
-  .main__Contacto__Form .main__Contacto__Form__Section {
-    width: 80%; }
-    .main__Contacto__Form .main__Contacto__Form__Section ul li > input {
-      width: 250px;
-      padding: 3px; }
-    .main__Contacto__Form .main__Contacto__Form__Section ul li .main__Contacto__Form__Textarea {
-      width: 270px;
-      height: 170px;
-      resize: none; }
-    .main__Contacto__Form .main__Contacto__Form__Section ul li div button {
-      width: 100px;
-      margin: 0px 20px;
-      padding: 3px; } }
-
-@media (max-width: 440px) {
-  .main__Contacto__Form .main__Contacto__Form__Section {
-    width: 80%; }
-    .main__Contacto__Form .main__Contacto__Form__Section ul li > input {
-      width: 220px;
-      padding: 3px; }
-    .main__Contacto__Form .main__Contacto__Form__Section ul li .main__Contacto__Form__Textarea {
-      width: 220px;
-      height: 170px;
-      resize: none; }
-    .main__Contacto__Form .main__Contacto__Form__Section ul li div button {
-      width: 100px;
-      margin: 0px 7px;
-      padding: 3px; } }
-
 footer {
   height: 20vh;
   background-color: #000; }
@@ -521,7 +345,7 @@ footer {
     .Pie .Pie__Lista .Pie__Lista__Link {
       list-style: none;
       color: white;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin-top: 4px; }
       .Pie .Pie__Lista .Pie__Lista__Link a {
         color: white;
@@ -546,6 +370,77 @@ footer {
   font-size: 0.6rem;
   margin-top: 10px; }
 
+@media (max-width: 1024px) {
+  .Carrusel__Letra__Titulo {
+    font-size: 1.5rem; }
+  #index__Main .Index__Section1 .Index__Section1__Articulo2 {
+    background-image: url("../Assets/Images/Tu-Galaxy5.webp"); }
+  .Main__Historia .Main__Historia__Div1, .Main__Historia .Main__Historia__Div2 {
+    padding-top: 0;
+    width: 100%; }
+    .Main__Historia .Main__Historia__Div1 .Main__Historia__Div1__Img1, .Main__Historia .Main__Historia__Div2 .Main__Historia__Div1__Img1 {
+      width: 60%; }
+  .Main__Historia .Main__Historia__Div2 {
+    width: 100%; }
+    .Main__Historia .Main__Historia__Div2 .Main__Historia__Div2__Img1 {
+      width: 40%; }
+  .Main__Historia2 .Main__Historia__Div3, .Main__Historia2 .Main__Historia__Div4 {
+    width: 100%;
+    height: 400px;
+    padding: 0; }
+    .Main__Historia2 .Main__Historia__Div3 .Main__Historia__Div3__Texto1, .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div3__Texto1 {
+      text-align: center;
+      margin: 0px 100px; }
+  .Main__Historia2 .Main__Historia__Div4 {
+    width: 100%; }
+    .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div4__Img1 {
+      width: 40%; }
+  .main__Historia__Titulo .main__Historia__TituloIzq {
+    background-color: #fff; }
+    .main__Historia__Titulo .main__Historia__TituloIzq .main__Historia__TituloIzq__Texto {
+      color: #000;
+      padding: 10px 0px; }
+  .main__Historia__Titulo .main__Historia__TituloDer .main__Historia__TituloDer__Texto {
+    padding: 10px 0px; } }
+
+@media (max-width: 870px) {
+  .Cabecera1 {
+    display: none; }
+  .Cabecera2 {
+    display: block;
+    background-color: #000 !important;
+    border-bottom: 1px solid #fff; }
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between; }
+  .navbar-brand {
+    color: #fff; }
+  .navbar-toggler {
+    border: 1px solid #fff !important; }
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; }
+  .nav-link {
+    color: #fff !important;
+    font-family: "Encode Sans Condensed", sans-serif !important; }
+  .Cabecera1__Logo {
+    width: 120px;
+    margin: 0; } }
+
 @media (max-width: 768px) {
   .Pie {
     justify-content: space-evenly; }
@@ -558,16 +453,88 @@ footer {
     .Pie__Lista__Responsive .Pie__Lista__Iconos {
       width: 25px;
       margin: 2px;
-      border-radius: 100%; } }
+      border-radius: 100%; }
+  .Carrusel__Letra__Titulo {
+    font-size: 1.2rem; }
+  #index__Main .Index__Section1 .Index__Section1__Articulo1, #index__Main .Index__Section1 .Index__Section1__Articulo2, #index__Main .Index__Section1 .Index__Section1__Articulo3 {
+    background-image: url("../Assets/Images/Tu-Galaxy2.webp"); }
+  #index__Main .Index__Section1 .Index__Section1__Articulo2 {
+    background-image: url("../Assets/Images/Tu-Galaxy5.webp"); }
+  #index__Main .Index__Section1 .Index__Section1__Articulo3 {
+    background-image: url("../Assets/Images/Tu-Galaxy6.2.webp");
+    background-position: center;
+    justify-content: flex-start;
+    align-items: center; }
+    #index__Main .Index__Section1 .Index__Section1__Articulo3 div {
+      width: 100%; }
+      #index__Main .Index__Section1 .Index__Section1__Articulo3 div .Index__Section1__Articulo3__Texto {
+        text-align: center;
+        margin: 10px; }
+      #index__Main .Index__Section1 .Index__Section1__Articulo3 div p {
+        margin: 10px;
+        text-align: center; } }
 
-@media (max-width: 610px) {
+@media (max-width: 600px) {
   .Pie2 {
     display: none; }
   .Pie__Lista {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .Main__Localidades .Main__Localidades__Div {
+    width: 90%; }
+    .Main__Localidades .Main__Localidades__Div .Main__Localidades__Div__Link .Main__Localidades__Div__Img {
+      width: 100%;
+      height: auto; }
+    .Main__Localidades .Main__Localidades__Div .Main__Localidades__Div__Link .Main__Localidades__Div__Texto {
+      font-size: 1.3rem; }
+  .Main__Historia .Main__Historia__Div1 .Main__Historia__Div1__Img1, .Main__Historia .Main__Historia__Div2 .Main__Historia__Div1__Img1 {
+    width: 90%;
+    margin-top: 20px; }
+  .Main__Historia .Main__Historia__Div2 .Main__Historia__Div2__Img1 {
+    width: 60%; }
+  .Main__Historia2 .Main__Historia__Div3, .Main__Historia2 .Main__Historia__Div4 {
+    height: 600px;
+    padding: 0; }
+    .Main__Historia2 .Main__Historia__Div3 .Main__Historia__Div3__Texto1, .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div3__Texto1 {
+      margin: 0px 30px; }
+  .Main__Historia2 .Main__Historia__Div4 .Main__Historia__Div4__Img1 {
+    width: 90%; }
+  .Final {
+    height: 600px; }
+    .Final .Final__Texto {
+      margin: 0px 30px; }
+  .main__Contacto__Form .main__Contacto__Form__Section {
+    width: 80%; }
+    .main__Contacto__Form .main__Contacto__Form__Section ul li > input {
+      width: 250px;
+      padding: 3px; }
+    .main__Contacto__Form .main__Contacto__Form__Section ul li .main__Contacto__Form__Textarea {
+      width: 270px;
+      height: 170px;
+      resize: none; }
+    .main__Contacto__Form .main__Contacto__Form__Section ul li div button {
+      width: 100px;
+      margin: 0px 20px;
+      padding: 3px; } }
 
-@media (max-width: 520px) {
-  .Pie__Texto {
-    font-size: 0.5rem; } }
+@media (max-width: 480px) {
+  .Index__Section1__Articulo1__Texto, #index__Main .Index__Section1 .Index__Section1__Articulo2 .Index__Section1__Articulo2__Texto {
+    font-size: 1rem; }
+  .Index__Section1__Articulo2__Texto {
+    font-size: 1rem; }
+  .Main__Localidades .Main__Localidades__Div .Main__Localidades__Div__Link .Main__Localidades__Div__Texto {
+    font-size: 1rem; }
+  .main__Contacto__Form .main__Contacto__Form__Section {
+    width: 80%; }
+    .main__Contacto__Form .main__Contacto__Form__Section ul li > input {
+      width: 220px;
+      padding: 3px; }
+    .main__Contacto__Form .main__Contacto__Form__Section ul li .main__Contacto__Form__Textarea {
+      width: 220px;
+      height: 170px;
+      resize: none; }
+    .main__Contacto__Form .main__Contacto__Form__Section ul li div button {
+      width: 100px;
+      margin: 0px 5px;
+      padding: 3px; } }
