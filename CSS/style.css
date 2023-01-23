@@ -62,6 +62,9 @@ body {
         #index__Main .Index__Section1 .Index__Section1__Articulo3 div p {
           margin-left: 50px; }
 
+.d-md-block {
+  margin: 40px; }
+
 header {
   position: sticky;
   top: 0;
